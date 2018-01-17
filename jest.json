@@ -1,0 +1,28 @@
+{
+  "bail": true,
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$/":
+      "<rootDir>/src/infrastructure/testing/assetsTransformer.js",
+    "\\.(css|less|scss)$":
+      "<rootDir>/src/infrastructure/testing/assetsTransformer.js",
+    ".(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$/":
+      "<rootDir>/src/infrastructure/testing/assetsTransformer.js",
+    ".(css|less|scss)$":
+      "<rootDir>/src/infrastructure/testing/assetsTransformer.js",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+      "<rootDir>/src/infrastructure/testing/assetsTransformer.js",
+    ".scss$": "<rootDir>/src/infrastructure/testing/assetsTransformer.js"
+  },
+  "modulePaths": ["src", "!src/infrastructure/testing/**/*.js"],
+  "collectCoverageFrom": [
+    "src/screens/**/*.{js,jsx}",
+    "!src/**/*.stories.{js,jsx}",
+    "!src/**/index.js",
+    "!src/infrastructure/testing/*.js"
+  ],
+
+  "setupTestFrameworkScriptFile":
+    "<rootDir>/src/infrastructure/testing/setupJest.js",
+
+  "snapshotSerializers": ["enzyme-to-json/serializer"]
+}

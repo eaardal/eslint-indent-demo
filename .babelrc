@@ -1,0 +1,91 @@
+{
+  "presets": [
+    "latest",
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-1"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "react-hot-loader/babel",
+    "syntax-async-functions",
+    "transform-regenerator",
+    "transform-do-expressions"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "babel-preset-jest",
+        "latest",
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ],
+        "react",
+        "stage-1"
+      ]
+    }
+  }
+
+  // {
+  //   "env": {
+  //     "test": {
+  //       "presets": ["env", "es2015", "latest", "react", "stage-1"],
+  //       "plugins": [
+  //         "transform-object-rest-spread",
+  //         "syntax-async-functions",
+  //         "transform-regenerator"
+  //       ]
+  //     },
+  //     "development": {
+  //       "presets": [
+  //         [
+  //           "env",
+  //           {
+  //             "modules": false
+  //           }
+  //         ],
+  //         ["es2015", { "modules": false }],
+  //         "react",
+  //         "stage-1"
+  //       ],
+  //       "plugins": [
+  //         "transform-object-rest-spread",
+  //         "react-hot-loader/babel",
+  //         "syntax-async-functions",
+  //         "transform-regenerator"
+  //       ]
+  //     },
+  //     "production": {
+  //       "presets": [
+  //         [
+  //           "env",
+  //           {
+  //             "modules": false
+  //           }
+  //         ],
+  //         [
+  //           "es2015",
+  //           {
+  //             "modules": false
+  //           }
+  //         ],
+  //         "react",
+  //         "stage-1"
+  //       ],
+  //       "plugins": [
+  //         "transform-object-rest-spread",
+  //         "syntax-async-functions",
+  //         "transform-regenerator"
+  //       ]
+  //     }
+  //   }
+  // }
+}
